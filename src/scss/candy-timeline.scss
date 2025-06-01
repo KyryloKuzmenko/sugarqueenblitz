@@ -1,0 +1,143 @@
+.candy-wrap {
+  background-image: url('../img/mobile/time-line-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 52px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/timeline-desktop-bg.png');
+    align-items: center;
+  }
+}
+
+.history-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 680px;
+  }
+}
+
+.title-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 335px;
+  margin-bottom: 20px;
+  @include media(desktop) {
+    max-width: 496px;
+    margin-bottom: 28px;
+  }
+}
+
+.wrapper-1 {
+  @include media(desktop) {
+    display: flex;
+    gap: 22px;
+  }
+}
+
+.history-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  width: 206px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    width: 100%;
+    max-width: 423px;
+    line-height: 1.3;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.history-description {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    font-size: 22px;
+    margin-bottom: 0;
+    max-width: 680px;
+  }
+}
+
+.history-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include media(desktop) {
+    align-items: flex-start;
+    // flex-wrap: wrap;
+    max-height: 500px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.history-events-list-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 22px;
+  @include media(desktop) {
+    align-items: flex-start;
+    max-height: 500px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.event-card-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  border-radius: 22px;
+  background-color: #ffe681;
+  outline: 2px solid #ac6509;
+  outline-offset: -2px;
+  @include media(desktop) {
+  }
+}
+
+.event-image {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 8px;
+
+  @include media(desktop) {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.event-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #09002b;
+  flex: 1;
+  line-height: 1.3;
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
