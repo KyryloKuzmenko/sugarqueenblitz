@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeMenuBtn = document.querySelector('.close-menu-btn');
   const backdrop = document.querySelector('.backdrop');
 
-  const links = document.querySelectorAll('.backdrop-list-item');
+  const links = document.querySelectorAll(
+    '.backdrop-list-item, .header-list-item'
+  );
 
   links.forEach(link => {
     link.addEventListener('click', () => {
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentHash = window.location.hash;
   if (currentHash) {
     links.forEach(link => {
-      const a = link.querySelector('a');
+      const a = link.querySelector('.bg-link, .header-link');
       if (a && a.getAttribute('href') === currentHash) {
         link.classList.add('active');
       }

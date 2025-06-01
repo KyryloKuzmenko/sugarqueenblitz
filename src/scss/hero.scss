@@ -1,0 +1,68 @@
+.hero-background {
+  background-image: url('../img/mobile/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  padding-top: 103px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/hero-desktop-bg.png');
+    padding-top: 170px;
+  }
+}
+
+.hero-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(desktop) {
+    width: 710px;
+    margin-left: 23px;
+  }
+}
+
+.hero-logo {
+  width: 224px;
+  height: 149px;
+  @include media(desktop) {
+    width: 360px;
+    height: 240px;
+  }
+}
+
+.hero-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 22px;
+  width: 301px;
+  @include media(desktop) {
+    width: 100%;
+
+  }
+}
+
+.hero-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 28px;
+  }
+}
+
+.hero-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.hero-btn {
+  width: 267px;
+  height: 90px;
+  margin-top: 32px;
+}
