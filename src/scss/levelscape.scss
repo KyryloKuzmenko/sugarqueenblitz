@@ -1,0 +1,89 @@
+.levelscape-content-wrap {
+  background-image: url('../img/mobile/level-scape-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 37px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/levelscape-desktop-bg.png');
+    margin-bottom: 55px;
+  }
+}
+
+.levelscape-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+}
+
+.levelscape-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.levelscape-text {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+
+.levelscape-list {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.levelscape-list-2 {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.levelscape-list-item {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.levelscape-img {
+  width: 100px;
+  height: 100px;
+}
+
+.levelscape-text-2 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+}
+
+
+.levelscape-desktop-text-1 {
+  @include media(desktop) {
+    width: 894px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
