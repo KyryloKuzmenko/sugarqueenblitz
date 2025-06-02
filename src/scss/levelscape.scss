@@ -8,7 +8,7 @@
   padding-bottom: 37px;
   @include media(desktop) {
     background-image: url('../img/desktop/levelscape-desktop-bg.png');
-    margin-bottom: 55px;
+    padding-bottom: 55px;
   }
 }
 
@@ -25,6 +25,9 @@
   line-height: 1.2;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
   pointer-events: none;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }
 
 .levelscape-text-wrap {
