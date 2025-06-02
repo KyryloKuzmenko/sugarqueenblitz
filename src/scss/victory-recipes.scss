@@ -1,0 +1,114 @@
+.victory-content-wrap {
+  background-image: url('../img/mobile/recipes-victory-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 73px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/victory-desktop-bg.png');
+    padding-bottom: 30px;
+  }
+}
+
+.victory-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  width: 100%;
+
+  @include media(desktop) {
+    font-size: 20px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.scroll-wrap {
+  position: relative;
+  width: 100%;
+  @include media(desktop) {
+    width: 335px;
+  }
+}
+
+.scroll-text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.victory-swiper-img {
+  width: 335px;
+}
+
+.scroll-swiper-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #09002b;
+}
+
+.scroll-swiper-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #09002b;
+  width: 249px;
+}
+
+.victory-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+.victory-swiper-slide {
+  @include media(desktop) {
+    flex: 0 0 335px;
+  }
+}
+
+.victory-slide-1 {
+  @include media(desktop) {
+    order: 1;
+  }
+}
+
+.victory-slide-2 {
+  @include media(desktop) {
+    order: 2;
+  }
+}
+.victory-slide-3 {
+  @include media(desktop) {
+    order: 3;
+  }
+}
+.victory-slide-4 {
+  @include media(desktop) {
+    order: 4;
+  }
+}
+
+
