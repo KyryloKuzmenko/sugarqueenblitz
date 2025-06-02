@@ -1,0 +1,71 @@
+.confetti-content-wrap {
+  background-image: url('../img/mobile/gallery-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 85px;
+  @include media(desktop) {
+    background-image: url('../img/desktop/confetti-desktop-bg.png');
+    padding-bottom: 45px;
+  }
+}
+
+.confetti-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  @include media(desktop) {
+    font-size: 20px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.confetti-swiper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  left: -15px;
+  width: calc(100% + 30px);
+  overflow: hidden;
+
+  @include media(desktop) {
+    left: -60px;
+
+    width: calc(100% + 120px);
+  }
+}
+
+
+
+.confetti-swiper-btn-wrap {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.confetti-swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: auto !important;
+}
+
+.confetti-swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
