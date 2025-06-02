@@ -83,18 +83,9 @@ font-size: 22px;
 }
 
 
-.swiper-slide {
+.royal-card {
   width: 312px !important;
   height: 400px !important;
-  @include media(desktop) {
-    flex: 1 1 calc((100% - 60px) / 4) !important;
-    width: calc((100% - 60px) / 4) !important;
-    max-width: 312px;
-    height: auto !important;
-  }
-}
-
-.royal-card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -104,6 +95,13 @@ font-size: 22px;
   border-radius: 22px;
   padding: 22px 32px;
   background: linear-gradient(180deg, #ffc065 0%, #ffde4b 100%);
+
+  @include media(desktop) {
+    flex: 1 1 calc((100% - 60px) / 4) !important;
+    width: calc((100% - 60px) / 4) !important;
+    max-width: 312px;
+    height: auto !important;
+  }
 }
 
 .royal-card-img {
