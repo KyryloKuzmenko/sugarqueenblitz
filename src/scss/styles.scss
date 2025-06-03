@@ -11,3 +11,11 @@
 @import './privacy-policy.scss';
 @import './terms-and-conditions.scss';
 @import './footer.scss';
+@import './cookies-modal.scss';
+
+section[id] {
+  scroll-margin-top: 60px;
+  @include media(desktop) {
+    scroll-margin-top: 80px;
+  }
+}

@@ -1,0 +1,61 @@
+.cookies-section {
+    background-color: #D5D7F0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @include media(desktop) {
+        padding-top: 120px;
+    }
+}
+
+.cookies-content-wrap,
+.terms-content-wrap,
+.privacy-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cookies-title,
+.terms-title,
+.privacy-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0.92857;
+    text-align: center;
+    color: #09002b;
+}
+
+
+.cookies-subtitle,
+.terms-subtitle,
+.privacy-subtitle {
+  font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cookies-text,
+.cookies-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #09002b;
+}
+
+.cookies-link {
+  text-decoration: underline;
+}
+
+// .cookie-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+// }
+
+.cookie-item,
+.terms-item {
+  display: flex;
+align-items: baseline;
+}
